@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/img/favi-hotel.png" type="image/x-icon">
+    <!-- link style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- link icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <title>Hotel</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-top">
+            <div class="site-name">
+                <span class="header__title">Luxuria</span>
+            </div>
+            <div class="site-nav">
+                <span class="header__menu" id="nav-btn">
+                    <i class="ri-align-justify"></i>
+                </span>
+            </div>
+        </div>
+        <div class="header-botton flex">
+            <h2>Un Refugio de Lujo y Confort</h2>
+            <p>
+                Bienvenido a Luxuria, donde la elegancia se encuentra con la comodidad. Nuestro hotel de cinco estrellas ofrece una experiencia incomparable con instalaciones de primera clase y un servicio excepcional. Disfrute de un oasis de tranquilidad en el corazón de la ciudad, perfecto para descansar y relajarse.
+            </p>
+            <a href="#reservation" class="header-btn">Reserva Ahora</a>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id="cancel-btn">
+            <i class="ri-close-line"></i>
+        </span>
+        <ul class="navbar">
+            <li><a href="#header">Inicio</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#rooms">Habitaciones</a></li>
+            <li><a href="#reservation">Reservaciones</a></li>
+            <li><a href="#customers">Testimonios</a></li>
+        </ul>
+        <a href="#" class="sidenav__images">
+            <img src="assets/img/side-nav.png" alt="sidenav image">
+            <p>Luxiria</p>
+        </a>
+    </div>
+    
+    <!-- fullscreen modal -->
+    <div id="modal"></div>
+
+    <main class="main">
+        <!-- SERVICES -->
+        <section class="services sec-width" id="services">
+            <div class="title">
+                <h2 class="sertvices__title">Nuestros Servicios</h2>
+            </div>
+            <div class="services-container">
+                <!-- single service -->
+                <article class="service">
+                    <div class="service-icon">
+                        <span>
+                            <i class="ri-restaurant-2-line"></i>
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h2>Servicio de Alimentos</h2>
+                        <p>
+                            Disfrute de nuestra excepcional gastronomía. Desde exquisitos desayunos hasta cenas, nuestros chefs están listos para deleitar su paladar con una variedad de platos locales preparados con los ingredientes más frescos y de la más alta calidad.
+                        </p>
+                        <button type="button" class="btn">Saber Más</button>
+                    </div>
+                </article>
+
+                <!-- single service -->
+                <article class="service">
+                    <div class="service-icon">
+                        <span>
+                            <i class="ri-drinks-2-fill"></i>
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h2>Refrescos</h2>
+                        <p>
+                            Relájese con una amplia selección de bebidas refrescantes. Nuestro servicio de refrescos ofrece una variedad de opciones para saciar su sed, desde jugos naturales y cócteles exclusivos hasta una fina selección de vinos y licores. Perfecto para cualquier momento del día.
+                        </p>
+                        <button type="button" class="btn">Saber Más</button>
+                    </div>
+                </article>
+
+                <!-- single service -->
+                <article class="service">
+                    <div class="service-icon">
+                        <span>
+                            <i class="ri-brush-2-fill"></i>
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h2>Servicio de Limpieza</h2>
+                        <p>
+                            Nuestro dedicado equipo de limpieza se asegura de que cada rincón de su habitación esté impecable. Disfrute de la tranquilidad de saber que su espacio personal será mantenido con los más altos estándares de higiene y confort, permitiéndole relajarse y disfrutar de su estancia.
+                        </p>
+                        <button type="button" class="btn">Saber Más</button>
+                    </div>
+                </article>
+
+                <!-- single service -->
+                <article class="service">
+                    <div class="service-icon">
+                        <span>
+                            <i class="ri-subway-wifi-line"></i>
+                        </span>
+                    </div>
+                    <div class="service-content">
+                        <h2>Seguridad en la Habitación</h2>
+                        <p>
+                            Su seguridad es nuestra prioridad. Nuestro sistema de seguridad en la habitación garantiza que su estancia sea segura y sin preocupaciones. 
+                            Desde cerraduras electrónicas hasta vigilancia 24/7, estamos comprometidos a protegerlo a 
+                            usted y a sus pertenencias.
+                        </p>
+                        <button type="button" class="btn">Saber Más</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ROOMS -->
+        <section class="rooms sec-width" id="rooms">
+            <div class="title">
+                <h2 class="rooms__title">Nuestras Habitaciones</h2>
+            </div>
+            <div class="rooms-conatiner">
+                <!-- single room -->
+                <article class="room">
+                    <div class="room-image">
+                        <img src="assets/img/room1.jpg" alt="room image">
+                    </div>
+                    <div class="room-text">
+                        <h3>Habitaciones de Lujo</h3>
+                        <ul>
+                            <li>
+                                <i class="ri-checkbox-circle-fill"></i>
+                                Amplias y Elegantes
+                            </li>
+                            <li>
+                                <i class="ri-checkbox-circle-fill"></i>
+                                Vistas Panorámicas
+                            </li>
+                            <li>
+                                <i class="ri-checkbox-circle-fill"></i>
+                                Confort de Primera Clase
+                            </li>
+                        </ul>
+                        <p>
+                            Nuestras Habitaciones de Lujo ofrecen un refugio de serenidad y elegancia. Equipadas con muebles de alta 
+                            calidad, sábanas de algodón de alta calidad y tecnología de última generación, cada detalle está pensado para 
+                            proporcionar una estancia inigualable.
+                            
+                        </p>
+                        <p class="rate">
+                            <span class="price">S/. 150.00</span> por Noche
+                        </p>
+                        <button type="submit" class="btn" id="rooms__btn">reservar Ahora</button>
+                    </div>
+                </article>
+                <!-- single room -->
+                <article class="room">
+                    <div class="room-image">
+                        <img src="assets/img/room2.jpg" alt="room image">
+                    </div>
+                    <div class="room-text">
+                        <h3>Habitaciones Confortables</h3>
+                        <ul>
+                            <li>
+                                <i class="ri-checkbox-circle-fill"></i>
+                                Cómodas y Acogedoras
+                            </li>
+                            <li>
+                                <i class="ri-checkbox-circle-fill"></i>
+                                Limpias y Seguras
+                            </li>
+                            <li>
+                                <i class="ri-checkbox-circle-fill"></i>
+                                Servicios Básicos Incluidos
+                            </li>
+                        </ul>
+                        <p class="room__text">
+                            Nuestras habitaciones confortables ofrecen todo lo necesario para una estancia agradable. 
+                            Perfectas para descansar después de un día de actividades, con camas cómodas y un ambiente 
+                            tranquilo. Ideales para los que buscan una opción económica sin sacrificar calidad.
+                        </p>
+                        <p class="rate">
+                            <span class="price">S/. 80.00</span> por Noche
+                        </p>
+                        <button type="button" class="btn">reservar Ahora</button>
+                    </div>
+                </article>
+                <!-- single room -->
+                <article class="room">
+                    <div class="room-image">
+                        <img src="assets/img/room3.jpg" alt="room image">
+                    </div>
+                    <div class="room-text">
+                        <h3>Habitaciones Familiares</h3>
+                        <ul>
+                            <li>
+                                <i class="ri-checkbox-circle-fill"></i>
+                                Espaciosas y Funcionales
+                            </li>
+                            <li>
+                                <i class="ri-checkbox-circle-fill"></i>
+                                Ambiente Familiar
+                            </li>
+                            <li>
+                                <i class="ri-checkbox-circle-fill"></i>
+                                Actividades para Niños
+                            </li>
+                        </ul>
+                        <p>
+                            Pensadas para familias, nuestras habitaciones ofrecen espacio adicional y un ambiente acogedor 
+                            para todos. Disfruta de actividades y entretenimiento para niños, garantizando una estancia 
+                            divertida.
+                        </p>
+                        <p class="rate">
+                            <span class="price">S/. 60.00</span> por Noche
+                        </p>
+                        <button type="button" class="btn">reservar Ahora</button>
+                    </div>
+                </article>
+                <!-- single room -->
+                <article class="room">
+                    <div class="room-image">
+                        <img src="assets/img/room4.jpg" alt="room image">
+                    </div>
+                    <div class="room-text">
+                        <h3>Habitaciones Económicas</h3>
+                        <ul>
+                            <li>
+                                <i class="ri-checkbox-circle-fill"></i>
+                                Tarifas Accesibles
+                            </li>
+                            <li>
+                                <i class="ri-checkbox-circle-fill"></i>
+                                Ambiente Tranquilo
+                            </li>
+                            <li>
+                                <i class="ri-checkbox-circle-fill"></i>
+                                Buena Conectividad
+                            </li>
+                        </ul>
+                        <p>
+                            Las habitaciones económicas son perfectas para quienes buscan una opción sencilla y asequible. 
+                            Ofrecen todas las comodidades básicas necesarias para una estancia cómoda y sin complicaciones.
+                        </p>
+                        <p class="rate">
+                            <span class="price">S/. 40.00</span> por Noche
+                        </p>
+                        <button type="button" class="btn">reservar Ahora</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- RESERVATION -->
+        <section class="reservation" id="reservation">
+            <div class="title">
+                <h2>REALIZA RESERVA</h2>
+            </div>
+            <div class="book">
+                <form action="" class="book-form">
+                    <div class="form-item">
+                        <label for="checkin-date">Fecha de Entrada: </label>
+                        <input type="date" id="checkin-date">
+                    </div>
+                    <div class="form-item">
+                        <label for="checkout-date">Fecha de Salida: </label>
+                        <input type="date" id="checkout-date">
+                    </div>
+                    <div class="form-item">
+                        <label for="adult">Adultos: </label>
+                        <input type="number" min="1" value="1" id="adult">
+                    </div>
+                    <div class="form-item">
+                        <label for="children">Niños: </label>
+                        <input type="number" min="0" value="0" id="children">
+                    </div>
+                    <div class="form-item">
+                        <label for="rooms">Habitaciones: </label>
+                        <input type="number" min="1" value="1" id="rooms">
+                    </div>
+                    <div class="form-item">
+                        <label for="rooms">Tipo de Habitación: </label>
+                        <select name="category" class="input-field">
+                            <option value="Select category">Seleccionar categoría</option>
+                            <option value="Haircut">Habitación de Lujo</option>
+                            <option value="Shaving & Facial">Habitación Confortable</option>
+                            <option value="Hair Color">Habitación Familiar</option>
+                            <option value="Beauty & spa">Habitación Económica</option>
+                        </select>
+                    </div>
+                    <button class="btn form-submit">Realizar Reserva</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- CUSTOMERS -->
+        <section class="customers" id="customers">
+            <div class="sec-width">
+                <div class="title">
+                    <h2 id="customer__title">Testimonios</h2>
+                </div>
+                <div class="customers-container">
+                    <!-- single customer -->
+                    <div class="customer">
+                        <div class="rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-half-line"></i></span>
+                        </div>
+                        <h3 id="custumer__subtitle">Nos Encantó</h3>
+                        <p>
+                            La estancia en Luxuria fue simplemente perfecta. Desde el momento en que llegamos, nos sentimos bienvenidos y cuidados. Las habitaciones eran espectaculares y los servicios de primera categoría. ¡Definitivamente volveremos!
+                        </p>
+                        <img src="assets/img/cus1.jpg" alt="customer image">
+                        <span class="customer__name">Juan Pérez, Lima</span>
+                    </div>
+                    <!-- single customer -->
+                    <div class="customer">
+                        <div class="rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-half-line"></i></span>
+                        </div>
+                        <h3 id="custumer__subtitle">Estancia Confortable</h3>
+                        <p>
+                            Cada detalle de nuestra estancia en Luxuria superó nuestras expectativas. Las camas eran muy cómodas y el ambiente del hotel era tranquilo y relajante. El personal fue increíblemente atento y amable.
+                        </p>
+                        <img src="assets/img/cus2.jpg" alt="customer image">
+                        <span class="customer__name">María González, Cusco</span>
+                    </div>
+                    <!-- single customer -->
+                    <div class="customer">
+                        <div class="rating">
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-fill"></i></span>
+                            <span><i class="ri-star-half-line"></i></span>
+                        </div>
+                        <h3 id="custumer__subtitle">Lugar Encantador</h3>
+                        <p>
+                            Pasamos unas vacaciones maravillosas en Luxuria. La ubicación es excelente, cerca de todas las atracciones principales. Las instalaciones del hotel son impresionantes y el servicio al cliente es de primera. ¡Muy recomendado!
+                        </p>
+                        <img src="assets/img/cus3.jpg" alt="customer image">
+                        <span class="customer__name">Carlos Mendoza, Huancayo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2 class="footer-title">Sobre Nosotros</h2>
+                <p>
+                    En Luxuria, nos dedicamos a ofrecer una experiencia de hospedaje inigualable.
+                </p>
+                <ul class="social-icons footer__social-icons">
+                    <li class="flex">
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                    </li>
+                    <li class="flex">
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                    </li>
+                    <li class="flex">
+                        <a href="#"><i class="ri-instagram-fill"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2 class="footer-title">Enlaces Útiles</h2>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Habitaciones</a></li>
+                    <li><a href="#">Suscripción</a></li>
+                    <li><a href="#">Tarjeta de Regalo</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2 class="footer-title">Privacidad</h2>
+                <ul>
+                    <li><a href="#">Carreras</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#">Servicios</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2 class="footer-title">¿Tienes una Pregunta?</h2>
+                <div class="contact-item">
+                    <span><i class="ri-map-pin-line"></i></span>
+                    <span>Av. Paracas 123</span>
+                </div>
+                <div class="contact-item">
+                    <span><i class="ri-phone-fill"></i></span>
+                    <span>+123 456 789</span>
+                </div>
+                <div class="contact-item">
+                    <span><i class="ri-mail-line"></i></span>
+                    <span><a href="mailto:info@luxeria.com">info@luxeria.com</a></span>
+                </div>
+            </div>
+        </div>
+        <span class="footer-copy">
+            &#169; Creado por Joel Ircañaupa | Todos los derechos reservados
+        </span>
+    </footer>
+    
+    <!-- SCROLL UP -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    
+    <!-- link animation js -->
+     <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!-- link main js -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
